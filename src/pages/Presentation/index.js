@@ -12,6 +12,7 @@ import MKTypography from "components/MKTypography";
 
 // Images
 import bgImage from "assets/images/posh/posh_1.png";
+import logoImage from "assets/images/posh/posh_logo_2.png";
 import companyImage from "assets/images/posh/company.png";
 import companyImage2 from "assets/images/posh/company_2.png";
 import solutionImage1 from "assets/images/posh/solution_1.png";
@@ -34,7 +35,7 @@ function Presentation() {
     { name: "Home", id: "home" },
     { name: "Company", id: "company" },
     { name: "Solution", id: "solution" },
-    { name: "Quality", id: "sub_solution" },
+    // { name: "Quality", id: "sub_solution" },
     { name: "Product", id: "product" },
     { name: "Contact", id: "contact" },
   ];
@@ -80,8 +81,10 @@ function Presentation() {
               fontWeight="bold"
               fontSize={{ xs: "20px", sm: "28px", md: "38px" }}
               px={{ xs: 2, sm: 3 }}
-              mt={{ xs: -10, sm: -15, md: -25 }}
+              mt={{ xs: -10, sm: -15, md: -40 }}
             >
+              <img src={logoImage} style={{ width: "30%" }} />
+              <br></br>
               “가장 적합한 제품을 합리적인 가격으로<br />
               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;제공하기 위해 최선을 다하겠습니다.”
             </MKTypography>
@@ -126,14 +129,21 @@ function Presentation() {
             >
               건축부자재 직수입 전문 기업
             </MKTypography>
-            <MKTypography variant="body1" color="text" lineHeight={1.4} sx={{ whiteSpace: "pre-line", px: { xs: 2, md: 0 } }}>
+            <MKTypography variant="body1" color="text" lineHeight={1.2} sx={{ whiteSpace: "pre-line", px: { xs: 2, md: 0 } }}>
               {`친절하고 정확한 상담을 통해 고객에게 `}
               <span style={{ fontWeight: "bold", fontSize: "22px" }}>적합</span>
-              {`한 제품을 제공해드리고, 적은 인건비와 탄탄한 중국 라인을 통해 `}
+              {`한 제품을 제공해드리고, 
+                적은 인건비와 탄탄한 중국 라인을 통해 `}
               <span style={{ fontWeight: "bold", fontSize: "22px" }}>합리</span>
-              {`적인 단가로 견적을 드릴 수 있다고 확신합니다.\n\n원가 절감이 필요하시거나, 기존 거래하시던 업체의 대응이 점점 늦어진다면, 저희 `}
+              {`적인 단가로 견적을 드릴 수 있다고 확신합니다.
+
+                원가 절감이 필요하시거나, 기존 거래하시던 업체의 대응이 점점 늦어진다면, 
+                저희 `}
               <span style={{ fontWeight: "bold", fontSize: "22px" }}>파쉬머티리얼즈</span>
-              {`에 연락하셔서 기존보다 낮은 단가와 빠른 대응을 확인해보시기 바랍니다.\n\n고객 여러분의 경제적 이익과 편리를 위해 최선을 다하겠습니다. 귀사의 자재 부서라고 생각하시고 마음껏 이용해주십시오.\n\n감사합니다.`}
+              {`에 연락하셔서 기존보다 낮은 단가와 빠른 대응을 확인해보시기 바랍니다.
+
+                고객 여러분의 경제적 이익과 편리를 위해 최선을 다하겠습니다. 
+                귀사의 자재 부서라고 생각하시고 마음껏 이용해주십시오.\n\n감사합니다.`}
             </MKTypography>
           </Grid>
         </Container>
